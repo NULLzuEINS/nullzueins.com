@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Landing Page
+title: Inh. André Lademann
 ---
 
 <section class="hero is-fullheight is-default is-bold">
@@ -35,26 +35,41 @@ title: Landing Page
 		<div class="content-wrapper">
 			<div class="columns">
 				<div class="column is-6 is-offset-3">
-					<form action="mailto:info@nullzueins.com" enctype="text/plain">
+					<form autocomplete="false" role="form" method="post"
+						action="https://mautic.nullzueins.com/form/submit?formId=1" id="mauticform_contactformwebsite"
+						data-mautic-form="contactformwebsite" enctype="multipart/form-data" name="contact">
+						<input type="hidden" name="mauticform[formId]" id="mauticform_contactformwebsite_id"
+							value="1" />
+						<input type="hidden" name="mauticform[return]" id="mauticform_contactformwebsite_return"
+							value="" />
+						<input type="hidden" name="mauticform[formName]" id="mauticform_contactformwebsite_name"
+							value="contactformwebsite" />
 						<div class="columns is-multiline">
 							<div class="column is-6">
-								<input class="input is-medium" type="text" placeholder="First Name *" />
+								<input class="input is-medium" type="text" name="mauticform[your_first_name]"
+									placeholder="First Name *" required />
 							</div>
 							<div class="column is-6">
-								<input class="input is-medium" type="text" placeholder="Last Name *" />
+								<input class="input is-medium" type="text" name="mauticform[your_last_name]"
+									placeholder="Last Name *" required />
 							</div>
 							<div class="column is-6">
-								<input class="input is-medium" type="text" placeholder="Email *" />
+								<input class="input is-medium" type="email" name="mauticform[your_email_address]"
+									placeholder="Email *" required />
 							</div>
 							<div class="column is-6">
-								<input class="input is-medium" type="email" placeholder="Company" />
+								<input class="input is-medium" type="text" name="mauticform[your_company]"
+									placeholder="Company" />
 							</div>
 							<div class="column is-12">
-								<textarea class="textarea" rows="6" placeholder=""></textarea>
+								<textarea class="textarea" rows="6" name="mauticform[your_message]"
+									placeholder="Your message"></textarea>
 							</div>
 							<div class="column is-12">
 								<div class="form-footer has-text-right mt-10">
-									<button type="submit" class="button cta is-large primary-btn form-button raised is-clear">
+									<button type="submit" name="mauticform[submit]"
+										id="mauticform_input_contactformwebsite_submit"
+										class="button cta is-large primary-btn form-button raised is-clear">
 										Send Message
 									</button>
 								</div>
