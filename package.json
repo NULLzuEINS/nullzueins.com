@@ -7,8 +7,8 @@
     "build": "gulp build",
     "start": "cd ./dist && http-server -sr -p 8000",
     "dev": "gulp dev",
-    "test": "npm run build && npm run start && npm run test-regression",
-    "test:all": "npm run test:lint && npm run test:accessibility && npm run test:regression",
+    "test": "yarn build && yarn start && yarn test:regression",
+    "test:all": "yarn test:lint && yarn test:accessibility && yarn test:regression",
     "test:lint": "gulp linters",
     "test:accessibility": "gulp accessibility",
     "test:regression": "percy exec -- node tests/regression.js"

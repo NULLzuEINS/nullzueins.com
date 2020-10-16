@@ -11,5 +11,5 @@
 !/.scss-lint.yml
 !/gulpfile.js
 !/LICENSE
-!/package-lock.json
 !/README.md
+!/yarn.lock
