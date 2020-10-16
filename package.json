@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "cd ./dist && http-server -sr -p 8000",
-    "test": "npm build && npm start && npm test-regression",
+    "test": "npm run build && npm run start && npm run test-regression",
     "test:all": "npm run test:lint && npm run test:accessibility && npm run test:regression",
     "test:lint": "gulp linters",
     "test:accessibility": "gulp accessibility",
