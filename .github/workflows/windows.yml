@@ -8,9 +8,11 @@ jobs:
         uses: actions/checkout@master
       - name: Install
         run: npm install
-      - name: Percy Test
+      - name: Build
+        run: npm run build
+      - name: Regression test
         uses: percy/exec-action@master
         with:
-          command: 'npm run test'
+          command: 'npm run test:regression'
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
