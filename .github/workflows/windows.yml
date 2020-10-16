@@ -11,6 +11,6 @@ jobs:
       - name: Percy Test
         uses: percy/exec-action@master
         with:
-          command: 'npm run test:regression'
+          command: 'npm run test'
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
