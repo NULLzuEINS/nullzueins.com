@@ -5,15 +5,8 @@
 !/src
 !/tests
 
-
-!/.babelrc
 !/.gitignore
-!/.htmllinrc
-!/.jshintrc
 !/.nvmrc
-!/.scss-lint.yml
 !/CHANGELOG.md
-!/gulpfile.js
 !/LICENSE
 !/README.md
-!/yarn.lock
